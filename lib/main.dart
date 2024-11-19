@@ -12,6 +12,28 @@ void main() {
   const tablerow3 = TableRow(
         children: [ Text('アイテム3'), Text('A'), Text('100'), ],);
 
+  final tablerow4 = TableRow(
+        decoration: const BoxDecoration(
+          color: Colors.grey
+        ),
+        children: <Widget>[
+          Container(
+            height: 300,
+            width: 500,
+            color: Colors.red[50],
+          ),
+          Container(
+            height: 100,
+            width: 250,
+            color: Colors.purple[50],
+          ),
+          Container(
+            height: 200,
+            width: 250,
+            color: Colors.green[50],
+          ),
+        ],
+      );
 
   final table = Table(
     columnWidths: const {
@@ -20,10 +42,11 @@ void main() {
       2: FlexColumnWidth(2),
     },
     border: TableBorder.all(width: 2,color: Colors.blue),
-    children: const [
+    children: [
       tablerow1,
       tablerow2,
       tablerow3,
+      tablerow4,
     ],
   );
  
