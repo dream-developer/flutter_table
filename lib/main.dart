@@ -5,6 +5,8 @@ void main() {
         children: [ Text('アイテム1'), Text('300'), ],);
 
   const tablerow2 = TableRow(
+        decoration: BoxDecoration(
+          color: Colors.yellow,),
         children: [ Text('アイテム2'), Text('200'), ],);
 
   const tablerow3 = TableRow(
