@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  const tablerow1 = TableRow( // 1
+  const tablerow1 = TableRow(
         children: [ Text('アイテム1'), Text('300'), ],);
 
   const tablerow2 = TableRow(
@@ -10,7 +10,8 @@ void main() {
   const tablerow3 = TableRow(
         children: [ Text('アイテム3'), Text('100'), ],);
 
-  final table = Table( // 2
+  final table = Table(
+    border: TableBorder.all(width: 2,color: Colors.blue),
     children: const [
       tablerow1,
       tablerow2,
